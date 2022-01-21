@@ -112,16 +112,18 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Explain the difference between Relational Databases and SQL.
 
-Relational Databases that are formatted into rows and columns, the difference between rows and columns: a bunch of rows is called a table, with this table we are able to represent the data and within this table of data we can identify the columns which are a part of the structure. 
+Relational Databases that are formatted into rows and columns, the difference between rows and columns: a bunch of rows is called a table, with this table we are able to represent the data and within this table of data we can identify the columns which are a part of the structure. This is different than SQL because with SQL we are able to create commands that each have a different execution. It is much more efficient to use SQL because it is easier to manage data.
 
 2. Why do tables need a Primary Key?
 
-Tables need a primary key because 
+Tables need a primary key because they identify the row within that table which can have many columns. Each primary key has to be unique because you cannot have two of the same primary key values.  
 
 3. What is the name given to a table column that references the Primary Key on another table?
 
-Foreign key.
+This would be called a foreign key. A foreign key is used to create that connection between the data of more than one table, this key helps us store and control data.   
 
 4. What do we need in order to have a _many to many_ relationship between two tables?
+
+We need to have a junction, this junction needs to contain a primary key of the two tables that we want to link together. We can execute this relationship by getting that primary key and connect it to the junction table so they can match and each key MUST be unique. 
 
 
