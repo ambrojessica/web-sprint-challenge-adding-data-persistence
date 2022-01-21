@@ -8,9 +8,9 @@ exports.up = async function (knex) {
       table.boolean('project_completed').defaultTo(false);
     })
     .createTable('resources', table => {
-      table.increments('project_id');
-      table.string('resource_name', 128).notNullable().unique();
-      table.text('resource_description', 128);
+      table.increments('resource_id');
+      table.string('resource_name', 128).unique().notNullable();
+      table.text('resource_description');
     })
     .createTable('tasks', table => {
       table.increments('task_id');
